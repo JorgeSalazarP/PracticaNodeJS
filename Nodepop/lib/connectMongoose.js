@@ -16,4 +16,4 @@ mongoose.connect('mongodb://localhost/nodepop', {
   useUnifiedTopology: true
 });
 
-module.exports = mongoose.connection;
+module.exports = mongoose.connection;//no haría falta porque es singleton.

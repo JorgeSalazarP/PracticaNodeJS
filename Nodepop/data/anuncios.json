@@ -1,42 +1,41 @@
 {
-    "model": "Anuncio",
-    "data": [
-        {
-            "nombre":   "Bicicleta",
-            "venta":   true,
-            "precio":   230.15,
-            "foto":   "bici.jpg",        
-            "tags":   ["lifestyle", "motor"]
-        },
-        {
-            "nombre":   "iPhone 3GS",
-            "venta":   false,
-            "precio":   50.00,
-            "foto":   "images/anuncios/iphone.png",  
-            "tags":   ["lifestyle", "mobile"]  
-        },
-        {
-            "nombre":   "Patinete electrico",
-            "venta":   false,
-            "precio":   90.00,
-            "foto":   "images/anuncios/mac-book-air.jpg",  
-            "tags":   [ "motor"]  
-        },
-        {
-            "nombre":   "Portatil",
-            "venta":   true,
-            "precio":   450.00,
-            "foto":   "images/anuncios/hard-drive.jpg",  
-            "tags":   [ "work"]  
-        },
-    
-        {
-            "nombre":   "Xiaomi redmi 9",
-            "venta":   true,
-            "precio":   239.00,
-            "foto":   "images/anuncios/iphone.png",  
-            "tags":   ["lifestyle", "mobile"]  
-        }
+    "anuncios": [
+            {
+                "name":   "Bicicleta",
+                "buy":   true,
+                "price":   230.15,
+                "picture":   "bici.jpg",        
+                "tags":   ["lifestyle", "motor"]
+            },
+            {
+                "name":   "iPhone 3GS",
+                "buy":    false,
+                "price":   50.00,
+                "picture":   "images/anuncios/iphone.png",  
+                "tags":   ["lifestyle", "mobile"]  
+            },
+            {
+                "name":   "Patinete electrico",
+                "buy":   false,
+                "price":   90.00,
+                "picture":   "images/anuncios/mac-book-air.jpg",  
+                "tags":   [ "motor"]  
+            },
+            {
+                "name":   "Portatil",
+                "buy":   true,
+                "price":   450.00,
+                "picture":   "images/anuncios/hard-drive.jpg",  
+                "tags":   [ "work"]  
+            },
+        
+            {
+                "name":   "Xiaomi redmi 9",
+                "buy":   true,
+                "price":   239.00,
+                "picture":   "images/anuncios/iphone.png",  
+                "tags":   ["lifestyle", "mobile"]  
+            }
         
     ]
 }
