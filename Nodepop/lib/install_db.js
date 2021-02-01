@@ -1,23 +1,22 @@
 'use strict';
 
 const fs = require('fs');
-const Ad = require('../models/Anuncio');
-
-startDatabase();
+const Article = require('../models/Anuncio');
 
 async function startDatabase(){
     
     try {
         require('./connectMongoose');// Primero comprobamos que conecte con la BBDD
-        await Ad.deleteMany();
-        const dates = JSON.parse(fs.readFileSync('./data/anuncios.json'),'utf-8');
-        await Ad.insertMany(dates.anuncios);
+        await Article.deleteMany();
+        const data = JSON.parse(fs.readFileSync('./data/anuncios.json'),'utf-8');
+        await Article.insertMany(data.anuncios);
        
-    } catch (error) {
+    } catch (err) {
     
-        next(error);
+        next(err);
     }
     
 }
 
 
+startDatabase();

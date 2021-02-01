@@ -4,28 +4,28 @@
                 "name":   "Bicicleta",
                 "buy":   true,
                 "price":   230.15,
-                "picture":   "bici.jpg",        
+                "picture":   "/images/bike.jpg",        
                 "tags":   ["lifestyle", "motor"]
             },
             {
                 "name":   "iPhone 3GS",
                 "buy":    false,
                 "price":   50.00,
-                "picture":   "images/anuncios/iphone.png",  
+                "picture":   "/images/iphone.jpg",  
                 "tags":   ["lifestyle", "mobile"]  
             },
             {
                 "name":   "Patinete electrico",
                 "buy":   false,
                 "price":   90.00,
-                "picture":   "images/anuncios/mac-book-air.jpg",  
+                "picture":   "/images/scooter.jpg",  
                 "tags":   [ "motor"]  
             },
             {
                 "name":   "Portatil",
                 "buy":   true,
                 "price":   450.00,
-                "picture":   "images/anuncios/hard-drive.jpg",  
+                "picture":   "/images/portatil.jpg",  
                 "tags":   [ "work"]  
             },
         
@@ -33,8 +33,15 @@
                 "name":   "Xiaomi redmi 9",
                 "buy":   true,
                 "price":   239.00,
-                "picture":   "images/anuncios/iphone.png",  
+                "picture":   "/images/xiaomi.jpg",  
                 "tags":   ["lifestyle", "mobile"]  
+            },
+            {
+                "name":   "Ipad",
+                "buy":   false,
+                "price":   350.00,
+                "picture":   "/images/ipad.jpg",  
+                "tags":   ["lifestyle", "work"]  
             }
         
     ]

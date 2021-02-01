@@ -5,7 +5,19 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <% articles.forEach(article => { %>
+      <p>El usuario 
+        <%= article.name %> 
+        <%= article.buy %> 
+        <%= article.price %> 
+        <%= article.tags %> 
+        <img src="<%= article.picture %>" 
+        alt="">
+      </p>
+    <% }) %>
   </body>
 </html>

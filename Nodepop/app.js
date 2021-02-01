@@ -23,6 +23,9 @@ app.use(express.static(path.join(__dirname, 'public')));
  */
 app.use('/apiv1/anuncios',require('./routes/apiv1/anuncios'));
 
+/**
+ * Ruta de la Website
+ */
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 
