@@ -6,8 +6,7 @@ var logger = require('morgan');
 
 var app = express();
 
-require('./lib/install_db');
-
+require('./lib/connectMongoose'); // Necesito llamarlo para cargar en npm run start y cargar la API
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -17,6 +16,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+/**
+ * Ruta de la API
+ */
+app.use('/apiv1/anuncios',require('./routes/apiv1/anuncios'));
 
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));

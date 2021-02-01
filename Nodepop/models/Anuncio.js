@@ -13,6 +13,6 @@ const adSchema = mongoose.Schema({
 
 
 //Creamos el modelo con el esquema que acabamos de definir
-const Anuncio = mongoose.model('Anuncio', adSchema)
+const Anuncio = mongoose.model('Anuncio', adSchema);
 // y lo exportamos
-module.exports = Anuncio
+module.exports = Anuncio;

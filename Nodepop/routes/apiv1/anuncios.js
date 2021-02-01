@@ -1,10 +1,18 @@
 var express = require('express');
 var router = express.Router();
-const Anuncio = require('../../models/Anuncio');
+const Ad = require('../../models/Anuncio');
 
 /* GET /apiv1/anuncios*/
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/', async function(req, res, next) {
+
+  try {
+      const result = await Ad.find();
+      res.json(result);
+  } catch (err) {
+    
+      next(err);
+  }
+  
 });
 
 module.exports = router;
