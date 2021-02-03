@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 // Creamos el esquema
-const adSchema = mongoose.Schema({
+const articleSchema = mongoose.Schema({
   name: String,
   buy: Boolean,
   price: Number,
@@ -13,6 +13,19 @@ const adSchema = mongoose.Schema({
 
 
 //Creamos el modelo con el esquema que acabamos de definir
-const Anuncio = mongoose.model('Anuncio', adSchema);
+const Article = mongoose.model('Anuncio', articleSchema);
+
+
+articleSchema.statics.list = function(filter) {
+
+  const query = Article.find(filter);
+  return query.exec();
+
+
+}
+
+
+
 // y lo exportamos
-module.exports = Anuncio;
+module.exports = Article;
+

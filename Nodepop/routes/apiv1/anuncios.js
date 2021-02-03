@@ -3,7 +3,13 @@ var express = require('express');
 var router = express.Router();
 const Article = require('../../models/Anuncio');
 
+
+
+
+
+
 /* GET /apiv1/anuncios*/
+
 router.get('/', async function(req, res, next) {
 
   try {
