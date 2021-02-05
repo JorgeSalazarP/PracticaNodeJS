@@ -22,7 +22,7 @@ router.get('/', async function(req, res, next) {
 router.post('/', async (req, res, next) => {
   try {
     const newArticle = req.body; 
-    const addArticle = new Articulo(newArticle);
+    const addArticle = new Anuncio(newArticle);
     const createdArticle = await addArticle.save(); //guardamos en la BBDD
 
     res.status(201).json({result: createdArticle});

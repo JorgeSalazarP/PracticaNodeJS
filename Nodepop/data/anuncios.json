@@ -4,28 +4,28 @@
                 "nombre":   "Bicicleta",
                 "venta":   true,
                 "precio":   230.15,
-                "foto":   "/images/bike.jpg",        
+                "foto":   "/images/bike.png",        
                 "tags":   ["lifestyle", "motor"]
             },
             {
                 "nombre":   "iPhone 3GS",
                 "venta":    false,
                 "precio":   50.00,
-                "foto":   "/images/iphone.jpg",  
+                "foto":   "/images/iphone.png",  
                 "tags":   ["lifestyle", "mobile"]  
             },
             {
                 "nombre":   "Patinete electrico",
                 "venta":   false,
                 "precio":   90.00,
-                "foto":   "/images/scooter.jpg",  
+                "foto":   "/images/scooter.png",  
                 "tags":   [ "motor"]  
             },
             {
                 "nombre":   "Portatil",
                 "venta":   true,
                 "precio":   450.00,
-                "foto":   "/images/portatil.jpg",  
+                "foto":   "/images/portatil.png",  
                 "tags":   [ "work"]  
             },
         
@@ -33,14 +33,14 @@
                 "nombre":   "Xiaomi redmi 9",
                 "venta":   true,
                 "precio":   239.00,
-                "foto":   "/images/xiaomi.jpg",  
+                "foto":   "/images/xiaomi.png",  
                 "tags":   ["lifestyle", "mobile"]  
             },
             {
                 "nombre":   "Ipad",
                 "venta":   false,
                 "precio":   350.00,
-                "foto":   "/images/ipad.jpg",  
+                "foto":   "/images/ipad.png",  
                 "tags":   ["lifestyle", "work"]  
             }
         

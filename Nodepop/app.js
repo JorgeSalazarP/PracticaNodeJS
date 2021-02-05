@@ -9,7 +9,8 @@ var app = express();
 require('./lib/connectMongoose'); // Necesito llamarlo para cargar en npm run start y cargar la API
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set('view engine', 'html');
+app.engine('html', require('ejs').__express);
 
 app.use(logger('dev'));
 app.use(express.json());

@@ -4,9 +4,9 @@ const mongoose = require('mongoose');
 
 // Creamos el esquema
 const articleSchema = mongoose.Schema({
-  nombre: String,
+  nombre: {type:String,index:true},
   venta: {type: Boolean, index:true},
-  precio: Number,
+  precio: {type:Number,index:true},
   foto: String,
   tags: {type: [String], index: true}
 });

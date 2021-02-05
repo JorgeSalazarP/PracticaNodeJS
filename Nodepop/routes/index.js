@@ -33,7 +33,6 @@ router.get('/', async function(req, res, next) {
 
           filter.precio = {'$gte': rankPrice[0]};
 
-
         } else if (rankPrice[0]==='' && rankPrice[1]!==''){ //precio -50
 
           filter.precio = {'$lte': rankPrice[1]};
@@ -53,13 +52,25 @@ router.get('/', async function(req, res, next) {
     }
 
     if (nombre) {
-      filter.nombre = new RegExp('^' + nombre, 'i')
+      filter.nombre = new RegExp('^' + nombre, 'i');
     }
 
   
     res.locals.articles = await Anuncio.list(filter,limit,skip,sort);
-    res.render('index', { title: 'Express' });
-  
+
+    
+    if (res.locals.articles.length===0){ // Por si no encuentra ningún artículo
+
+      return res.status(404).json({err: 'Not found'});
+    
+    }
+
+    res.render('index',{
+       title: 'nodePop',
+       age:new Date().getFullYear()
+      }
+    );
+    
   } catch (err) {
     
   
