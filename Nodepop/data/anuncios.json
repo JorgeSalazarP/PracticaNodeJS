@@ -1,46 +1,46 @@
 {
     "anuncios": [
             {
-                "name":   "Bicicleta",
-                "buy":   true,
-                "price":   230.15,
-                "picture":   "/images/bike.jpg",        
+                "nombre":   "Bicicleta",
+                "venta":   true,
+                "precio":   230.15,
+                "foto":   "/images/bike.jpg",        
                 "tags":   ["lifestyle", "motor"]
             },
             {
-                "name":   "iPhone 3GS",
-                "buy":    false,
-                "price":   50.00,
-                "picture":   "/images/iphone.jpg",  
+                "nombre":   "iPhone 3GS",
+                "venta":    false,
+                "precio":   50.00,
+                "foto":   "/images/iphone.jpg",  
                 "tags":   ["lifestyle", "mobile"]  
             },
             {
-                "name":   "Patinete electrico",
-                "buy":   false,
-                "price":   90.00,
-                "picture":   "/images/scooter.jpg",  
+                "nombre":   "Patinete electrico",
+                "venta":   false,
+                "precio":   90.00,
+                "foto":   "/images/scooter.jpg",  
                 "tags":   [ "motor"]  
             },
             {
-                "name":   "Portatil",
-                "buy":   true,
-                "price":   450.00,
-                "picture":   "/images/portatil.jpg",  
+                "nombre":   "Portatil",
+                "venta":   true,
+                "precio":   450.00,
+                "foto":   "/images/portatil.jpg",  
                 "tags":   [ "work"]  
             },
         
             {
-                "name":   "Xiaomi redmi 9",
-                "buy":   true,
-                "price":   239.00,
-                "picture":   "/images/xiaomi.jpg",  
+                "nombre":   "Xiaomi redmi 9",
+                "venta":   true,
+                "precio":   239.00,
+                "foto":   "/images/xiaomi.jpg",  
                 "tags":   ["lifestyle", "mobile"]  
             },
             {
-                "name":   "Ipad",
-                "buy":   false,
-                "price":   350.00,
-                "picture":   "/images/ipad.jpg",  
+                "nombre":   "Ipad",
+                "venta":   false,
+                "precio":   350.00,
+                "foto":   "/images/ipad.jpg",  
                 "tags":   ["lifestyle", "work"]  
             }
         

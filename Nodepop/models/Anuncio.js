@@ -4,28 +4,30 @@ const mongoose = require('mongoose');
 
 // Creamos el esquema
 const articleSchema = mongoose.Schema({
-  name: String,
-  buy: Boolean,
-  price: Number,
-  picture: String,
+  nombre: String,
+  venta: {type: Boolean, index:true},
+  precio: Number,
+  foto: String,
   tags: {type: [String], index: true}
 });
 
 
-//Creamos el modelo con el esquema que acabamos de definir
-const Article = mongoose.model('Anuncio', articleSchema);
+articleSchema.statics.list = function(filter,limit,skip,sort) {
 
+  const query = Anuncio.find(filter);
+  query.limit(limit);
+  query.skip(skip);
+  query.sort(sort);
+  
 
-articleSchema.statics.list = function(filter) {
-
-  const query = Article.find(filter);
   return query.exec();
 
 
 }
 
-
+//Creamos el modelo con el esquema que acabamos de definir
+const Anuncio = mongoose.model('Anuncio', articleSchema);
 
 // y lo exportamos
-module.exports = Article;
+module.exports = Anuncio;
 
