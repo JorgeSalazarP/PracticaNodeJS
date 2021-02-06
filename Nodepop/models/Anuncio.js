@@ -12,14 +12,14 @@ const articleSchema = mongoose.Schema({
 });
 
 
-articleSchema.statics.list = function(filter,limit,skip,sort) {
+articleSchema.statics.list = function(filter,limit,skip,sort,fields) {
 
   const query = Anuncio.find(filter);
   query.limit(limit);
   query.skip(skip);
+  query.select(fields);
   query.sort(sort);
   
-
   return query.exec();
 
 

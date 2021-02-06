@@ -14,6 +14,7 @@ router.get('/',async function(req, res, next) {
     const sort = req.query.sort;
     const precio = req.query.precio;
     const nombre = req.query.nombre;
+    const fields = req.query.fields;
 
     const filter = {};// Si le pasamos el objeto literal vacío, nos mostrará todos los artículos.
 
@@ -57,7 +58,7 @@ router.get('/',async function(req, res, next) {
     }
 
   
-    res.locals.articles = await Anuncio.list(filter,limit,skip,sort);
+    res.locals.articles = await Anuncio.list(filter,limit,skip,sort,fields);
 
     
     if (res.locals.articles.length===0){ // Por si no encuentra ningún artículo
@@ -67,7 +68,7 @@ router.get('/',async function(req, res, next) {
     }
 
     res.render('index',{
-       title: 'nodePop',
+       title: 'Nodepop',
        age:new Date().getFullYear()
       }
     );
