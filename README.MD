@@ -32,8 +32,7 @@ npm run installDB
 ```
 ## La BBDD carga el archivo /data/anuncios.json
 
-{
-    "anuncios": [
+"anuncios": [
             {
                 "nombre":   "Bicicleta",
                 "venta":   true,
@@ -78,8 +77,8 @@ npm run installDB
                 "tags":   ["lifestyle", "work"]  
             }
         
-    ]
-}
+]
+
 
 ## Formas de arrancar 
 
