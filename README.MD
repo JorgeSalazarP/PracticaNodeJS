@@ -75,7 +75,7 @@ Nos muestra todos los anuncios
 
 ## Peticiones GET ('/apiv1/anuncios')
 
-Se muestra la API
+Se muestra la API y además funcionan todos los filtros anteriormente mencionados.
 
 **Método POST**
 

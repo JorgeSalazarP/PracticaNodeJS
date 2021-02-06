@@ -4,18 +4,12 @@ var router = express.Router();
 const Anuncio = require('../../models/Anuncio');
 
 /* GET /apiv1/anuncios*/
+router.get('/',require('../../models/filters'));
 
-router.get('/', async function(req, res, next) {
 
-  try {
-      const result = await Anuncio.find();
-      res.json(result);
-  } catch (err) {
-    
-      next(err);
-  }
+
+      
   
-});
 
 /* POST /apiv1/anuncios*/
 // Creamos un nuevo artículo con POST
