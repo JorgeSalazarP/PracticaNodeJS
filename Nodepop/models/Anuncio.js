@@ -25,6 +25,14 @@ articleSchema.statics.list = function(filter,limit,skip,sort,fields) {
 
 }
 
+// Realizamos un métodos estático para listar los Tags
+articleSchema.statics.listTags = function () {
+  const tagsCollection = mongoose.connection.collection('anuncios');
+  
+  return (tagsCollection.distinct('tags'));
+}
+
+
 //Creamos el modelo con el esquema que acabamos de definir
 const Anuncio = mongoose.model('Anuncio', articleSchema);
 
