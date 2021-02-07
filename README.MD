@@ -77,6 +77,10 @@ Nos muestra todos los anuncios
 
 Se muestra la API y además funcionan todos los filtros anteriormente mencionados.
 
+## Peticiones GET ('/apiv1/anuncios/tags')
+
+Se listan los tags existentes de la API en formato JSON
+
 **Método POST**
 
 * Para crear un nuevo anuncio a través de POSTMAN. Se puede utilizar de prueba la imagen /images/deportivos.jpg
